@@ -2,14 +2,13 @@
 // Firebase configuration
 // ==============================
 const firebaseConfig = {
-  apiKey: "AIzaSyAMTFbtBXr76t68sMCZGQWL4-c7t8H1Ndo",
-  authDomain: "wedding-218f4.firebaseapp.com",
-  projectId: "wedding-218f4",
-  storageBucket: "wedding-218f4.firebasestorage.app",
-  messagingSenderId: "172174173322",
-  appId: "1:172174173322:web:847ee7ad8908a07716f973"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
-
 // ==============================
 // Initialize Firebase
 // ==============================
